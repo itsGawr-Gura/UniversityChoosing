@@ -76,6 +76,14 @@ namespace UniversityChoosing
             }
         }
 
+        private void infoGW_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            string universityName = infoGW.Rows[e.RowIndex].Cells["UniversityColumn"].Value.ToString();
+            string cityName = infoGW.Rows[e.RowIndex].Cells["CityColumn"].Value.ToString();
+            UniversityInfo info = new UniversityInfo(universityName, cityName);
+            this.Hide();
+            info.Show();
+        }
     }
     public class University
     {

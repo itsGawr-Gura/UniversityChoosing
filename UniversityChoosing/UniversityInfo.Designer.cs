@@ -32,9 +32,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.univer = new System.Windows.Forms.TextBox();
+            this.city = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.backBT = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,36 +76,50 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Фото";
             // 
-            // textBox1
+            // univer
             // 
-            this.textBox1.Location = new System.Drawing.Point(209, 128);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(1089, 31);
-            this.textBox1.TabIndex = 4;
+            this.univer.Location = new System.Drawing.Point(209, 128);
+            this.univer.Name = "univer";
+            this.univer.ReadOnly = true;
+            this.univer.Size = new System.Drawing.Size(1089, 31);
+            this.univer.TabIndex = 4;
             // 
-            // textBox2
+            // city
             // 
-            this.textBox2.Location = new System.Drawing.Point(209, 195);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(1089, 31);
-            this.textBox2.TabIndex = 5;
+            this.city.Location = new System.Drawing.Point(209, 195);
+            this.city.Name = "city";
+            this.city.ReadOnly = true;
+            this.city.Size = new System.Drawing.Size(1089, 31);
+            this.city.TabIndex = 5;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(126, 311);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1217, 581);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
+            // 
+            // backBT
+            // 
+            this.backBT.Location = new System.Drawing.Point(12, 892);
+            this.backBT.Name = "backBT";
+            this.backBT.Size = new System.Drawing.Size(146, 48);
+            this.backBT.TabIndex = 7;
+            this.backBT.Text = "Назад";
+            this.backBT.UseVisualStyleBackColor = true;
+            this.backBT.Click += new System.EventHandler(this.backBT_Click);
             // 
             // UniversityInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1458, 940);
+            this.Controls.Add(this.backBT);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.city);
+            this.Controls.Add(this.univer);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -123,8 +138,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox univer;
+        private System.Windows.Forms.TextBox city;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button backBT;
     }
 }

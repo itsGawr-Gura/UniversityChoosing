@@ -50,8 +50,10 @@
             this.infoGW.ReadOnly = true;
             this.infoGW.RowHeadersWidth = 82;
             this.infoGW.RowTemplate.Height = 33;
+            this.infoGW.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.infoGW.Size = new System.Drawing.Size(1343, 847);
             this.infoGW.TabIndex = 0;
+            this.infoGW.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.infoGW_CellMouseDoubleClick);
             // 
             // menuStrip1
             // 
@@ -65,7 +67,7 @@
             this.выйтиToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1367, 48);
+            this.menuStrip1.Size = new System.Drawing.Size(1367, 40);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
