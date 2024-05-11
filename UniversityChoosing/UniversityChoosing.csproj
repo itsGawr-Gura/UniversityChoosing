@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddUniversity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUniversity.Designer.cs">
+      <DependentUpon>AddUniversity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditUniversit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditUniversit.Designer.cs">
+      <DependentUpon>EditUniversit.cs</DependentUpon>
+    </Compile>
     <Compile Include="UniverInfo.cs" />
     <Compile Include="UniversityChoosing.cs">
       <SubType>Form</SubType>
@@ -67,6 +79,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddUniversity.resx">
+      <DependentUpon>AddUniversity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditUniversit.resx">
+      <DependentUpon>EditUniversit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UniversityChoosing.resx">
       <DependentUpon>UniversityChoosing.cs</DependentUpon>
     </EmbeddedResource>

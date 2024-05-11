@@ -67,32 +67,35 @@
             this.выйтиToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1367, 40);
+            this.menuStrip1.Size = new System.Drawing.Size(1367, 42);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // добавитьToolStripMenuItem
             // 
             this.добавитьToolStripMenuItem.Name = "добавитьToolStripMenuItem";
-            this.добавитьToolStripMenuItem.Size = new System.Drawing.Size(140, 36);
+            this.добавитьToolStripMenuItem.Size = new System.Drawing.Size(140, 38);
             this.добавитьToolStripMenuItem.Text = "Добавить";
+            this.добавитьToolStripMenuItem.Click += new System.EventHandler(this.добавитьToolStripMenuItem_Click);
             // 
             // удалитьToolStripMenuItem
             // 
             this.удалитьToolStripMenuItem.Name = "удалитьToolStripMenuItem";
-            this.удалитьToolStripMenuItem.Size = new System.Drawing.Size(122, 36);
+            this.удалитьToolStripMenuItem.Size = new System.Drawing.Size(122, 38);
             this.удалитьToolStripMenuItem.Text = "Удалить";
+            this.удалитьToolStripMenuItem.Click += new System.EventHandler(this.удалитьToolStripMenuItem_Click);
             // 
             // изменитьToolStripMenuItem
             // 
             this.изменитьToolStripMenuItem.Name = "изменитьToolStripMenuItem";
-            this.изменитьToolStripMenuItem.Size = new System.Drawing.Size(143, 36);
+            this.изменитьToolStripMenuItem.Size = new System.Drawing.Size(143, 38);
             this.изменитьToolStripMenuItem.Text = "Изменить";
+            this.изменитьToolStripMenuItem.Click += new System.EventHandler(this.изменитьToolStripMenuItem_Click);
             // 
             // выйтиToolStripMenuItem
             // 
             this.выйтиToolStripMenuItem.Name = "выйтиToolStripMenuItem";
-            this.выйтиToolStripMenuItem.Size = new System.Drawing.Size(103, 36);
+            this.выйтиToolStripMenuItem.Size = new System.Drawing.Size(103, 38);
             this.выйтиToolStripMenuItem.Text = "Выйти";
             // 
             // cityComboBox
